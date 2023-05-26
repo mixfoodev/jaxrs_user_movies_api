@@ -1,0 +1,83 @@
+header {
+  background-color: rgb(87, 64, 1);
+}
+
+nav {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: 2rem;
+  color: wheat;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-self: end;
+  gap: 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.menu {
+  display: none;
+  cursor: pointer;
+  font-size: large;
+}
+
+nav li {
+  list-style: none;
+}
+
+.user-form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: absolute;
+  top: 55px;
+  right: 5px;
+  background-color: rgb(107, 79, 1);
+  padding: 1rem;
+  border: 2px solid #333;
+  z-index: 10;
+}
+
+.user-form input,
+.user-form button {
+  padding: 0.5rem;
+}
+
+.user-form button {
+  display: flex;
+  justify-content: start;
+  gap: 1rem;
+}
+
+#usernameInput,
+#passwordInput {
+  width: 120px;
+  border: 1px solid rgb(207, 204, 204);
+  border-radius: 5px;
+}
+
+.action {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: flex;
+  gap: 2rem;
+  font-size: 1.2rem;
+
+  cursor: pointer;
+}
+
+.action > span:hover {
+  text-decoration: underline;
+}
+
+.menu:hover {
+  box-shadow: 0px 0px 1rem rgb(194, 126, 1);
+}

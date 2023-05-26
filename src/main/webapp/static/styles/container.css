@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.container > .content > h3 {
+  margin-top: 1rem;
+}
+
+.container > .content {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  position: relative;
+}
+
+.container .movie h1,
+.container .movie .plot,
+.container .movie span {
+  user-select: text;
+}
+
+.container > .content h3 {
+  color: wheat;
+  min-width: 100px;
+}
+
+#username {
+  color: white;
+}

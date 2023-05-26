@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Movies</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./static/styles/main.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      defer
+    ></script>
+
+    <script src="./static/js/main.js" type="module" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <h2>Movies</h2>
+        </div>
+        <div>
+          <form class="user-form" style="display: none">
+            <input
+              type="text"
+              name="username"
+              id="usernameInput"
+              placeholder="username"
+            />
+            <input
+              type="password"
+              name="password"
+              id="passwordInput"
+              placeholder="password"
+            />
+            <button type="submit">
+              <i class="fa-solid fa-key"></i> <span>Login</span>
+            </button>
+          </form>
+        </div>
+
+        <div class="action">
+          <span class="logout" style="display: none">Logout</span>
+          <span class="primary-action">Login</span>
+        </div>
+        <i class="fa-solid fa-bars menu hide"></i>
+      </nav>
+    </header>
+
+    <div class="container">
+      <aside class="sidebar menu-open">
+        <span class="dark-overlay" style="display: none"></span>
+        <div class="action">
+          <span class="logout" style="display: none">Logout</span>
+          <span class="primary-action">Login</span>
+        </div>
+        <h3>Favorites</h3>
+        <hr />
+        <div class="favorites">
+          <ul></ul>
+        </div>
+      </aside>
+
+      <div class="content">
+        <h3>Hello, <span id="username" data-id=""></span></h3>
+        <form id="search">
+          <input
+            type="text"
+            name="movie"
+            id="movie"
+            placeholder="Search movie"
+          />
+          <button>
+            <i class="fa fa-search fa-lg" aria-hidden="false"></i>
+          </button>
+        </form>
+
+        <section class="movie"></section>
+        <div class="dialog" style="display: none"></div>
+      </div>
+    </div>
+  </body>
+</html>

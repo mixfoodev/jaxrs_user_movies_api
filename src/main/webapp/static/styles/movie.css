@@ -1,0 +1,78 @@
+.movie {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 2rem;
+  padding: 1rem 3rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.poster img {
+  width: 100%;
+  height: auto;
+}
+
+.movie > .content {
+  flex: 1;
+  color: whitesmoke;
+}
+
+.basic-stats,
+.rating,
+.plot {
+  margin-top: 1rem;
+}
+
+.plot {
+  font-size: 18px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 1rem;
+}
+
+.movie h1 {
+  margin-top: 1rem;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+.stat {
+  padding-inline-end: 1rem;
+}
+
+.values {
+  margin-inline-start: 0.5rem;
+}
+
+.info {
+  font-weight: 600;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.info::after {
+  content: ":";
+}
+
+#btn-favorites {
+  padding: 0.5rem 1rem;
+  width: fit-content;
+  font-size: large;
+  font-family: serif;
+}
+
+.fav-add::before {
+  content: "\e501";
+  padding-inline-end: 0.5rem;
+  font: var(--fa-font-solid);
+}
+
+.fav-remove::before {
+  content: "\e4ff";
+  padding-inline-end: 0.5rem;
+  font: var(--fa-font-solid);
+}
