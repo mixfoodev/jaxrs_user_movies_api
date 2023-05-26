@@ -38,7 +38,7 @@ build/
 .DS_Store
 
 ### DB Credentials ###
-src/main/resources/META-INF/application.properties
+src/main/resources/application.properties
 
 ### Movies API KEY ###
 src/main/webapp/static/config.js
