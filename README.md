@@ -22,7 +22,14 @@ file and rename the file to '_**application.properties**_'.
 * Provide the API Key in '_**src/main/webapp/static/config_example.js**_'
 file and rename the file to '_**config.js**_'.
 
-  
-Predefined admin credentials:  
+# Run  
+To run the application, you will need JDK and Maven installed on your system. 
+You can specify the JDK version in the project properties located in the pom.xml file.
+
+To start the application with the embedded Jetty server, use the following command:  
+```mvn jetty:run```
+ 
+
+__Predefined admin credentials:__  
 username: "admin"  
 password: "admin"
